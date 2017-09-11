@@ -37,19 +37,19 @@ public class StudentGroup implements StudentArrayOperation {
 
 		if (students == null) {
 			throw new IllegalArgumentException();
-		} else
-			this.students = students;
+		}
+		this.students = students;
 	}
 
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		Student student = null;
+		
 		if (index < 0 || index >= students.length) {
 			throw new IllegalArgumentException();
-		} else {
-			student = students[index];
-		}
+		} 
+		Student	student = students[index];
+		
 
 		return student;
 	}
